@@ -560,6 +560,8 @@ void setup()
 		ledCtrl.SetColorByCode(stts);
 		return;
 	}
+
+	
 	if (!WiFi.softAPConfig(local_ip, gateway, subnet))
 	{
 		Serial.println("WiFi::config error");
