@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drop Test by OT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  html {font-family: Helvetica;display: inline-block;margin: 0px auto;text-align: center;}
+.esp_ctrl_wrapper{display: flex;flex-direction: column;align-items: center;justify-content: center;margin: 5px 0;}
+.esp_bt{background-color: aqua;border-radius: 10px;width: 80%;padding: 5px 0;border: solid 1px black;text-decoration: none;color: black;margin: 0;display: flex;justify-content: center;align-items: center;}
+.esp_state {width: 20px;height: 20px;border-radius: 10px;margin: 5px 10px;}
+.es_red {background-color: red;}
+.es_green {background-color: green;}
+.esp_ctrl{margin: 5px;}
+.esp_ctrl_el {display: flex;justify-content: center;align-items: center;}
+.file_wrapper_main {flex-direction: column;align-items: center;width: 100%;height: auto;display: flex;justify-content: center;}
+.file_list {border-radius: 3px;border-width: 1px;border-color: #f44336;background-color: #86b0fd;display: flex;flex-direction: column;align-items: center;width: 80%;height: auto;min-height: 20%;}
+.file_item {display: flex;background-color: aliceblue;flex-wrap: wrap;width: 90%;margin: 10px 0;padding: 4px 2px;justify-content: space-evenly;border-radius: 10px;border: solid;}
+.file_text_area {display: flex;margin: 0 10px;size: 15px;color: black;}
+.file_wrapper {display: flex;}
+.res_wrapper{margin: 5px 0; display: flex;justify-content: center;}
+</style>
+</head>
+<body>
+  <h1>Drop Test</h1>
+  <!-- ESP CTRL -->
+  <div class="esp_ctrl_wrapper">
+    <div class="esp_ctrl_el">
+      <h1 class="esp_ctrl"> ESP Control</h1>
+      <div class="esp_state es_red"> </div>
+    </div>
+    <a class="esp_ctrl esp_bt" href="Stest">Start Test</a>
+    <a class="esp_ctrl esp_bt" href="call">Calibration MPU</a>
+  </div>
+
+  <!-- FILE LIST -->
+  <div class="file_wrapper_main">
+    <div class="res_wrapper">
+      <h1 class="file_text_area">Results</h1>
+      <a href="fileClear" class="esp_bt">Clear</a>
+    </div>
+    <div class="file_list">
+      <div class="file_item">
+        <div class="file_wrapper">
+          <div class="file_text_area"> FILE: </div>
+          <div class="file_text_area"> name </div>
+        </div>
+        <div class="file_wrapper">
+          <a class="file_text_area" href="" download="">Download</a>
+        </div>
+        <div class="file_wrapper">
+          <div class="file_text_area ">Size:</div>
+          <div class="file_text_area"> 1000 </div>
+          <div class="file_text_area"> byte</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
